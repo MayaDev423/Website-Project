@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+</head>
+<body>
+    <div id="top">
+        <h1>Contact Us</h1>
+        <p>Please complete the information below. Fields marked with <span class="required">*</span> are required fields</p>
+    </div>
+
+    <div id = "data">
+        <form action="mailto:sample@email.com" method="post">
+            <fieldset>
+            <legend>Your Data</legend>
+            <table>
+                <tr>
+                    <td>First Name <span class="required">*</span></td>
+                    <td><input type="text" name="first_name" required></td>
+                </tr>
+                <tr>
+                    <td>Last Name <span class="required">*</span></td>
+                    <td><input type="text" name="last_name" required></td>
+                </tr>
+                <tr>
+                    <td>Street Address <span class="required">*</span></td>
+                    <td><input type="text" name="street_address" required></td>
+                </tr>
+                <tr>
+                    <td>City <span class="required">*</span></td>
+                    <td><input type="text" name="city" required></td>
+                </tr>
+                <tr>
+                    <td>Province <span class="required">*</span></td>
+                    <td>
+                        <select name="province" required>
+                            <option value="" disabled selected>Select a province</option>
+                            <option value="AB">AB</option>
+                            <option value="BC">BC</option>
+                            <option value="MB">MB</option>
+                            <option value="NB">NB</option>
+                            <option value="NL">NL</option>
+                            <option value="NS">NS</option>
+                            <option value="NT">NT</option>
+                            <option value="NU">NU</option>
+                            <option value="ON">ON</option>
+                            <option value="PE">PE</option>
+                            <option value="QC">QC</option>
+                            <option value="SK">SK</option>
+                            <option value="YT">YT</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Postal Code <span class="required">*</span></td>
+                    <td><input type="text" name="postal_code" required></td>
+                </tr>
+                <tr>
+                    <td>Email Address <span class="required">*</span></td>
+                    <td><input type="email" name="email_address" required></td>
+                </tr>
+                <tr>
+                    <td>Phone Number <span class="required">*</span></td>
+                    <td><input type="tel" name="phone" pattern="[0-9]{10}" required></td>
+                </tr>
+            </table>
+            <table>
+            </table>
+            </fieldset>
+            <fieldset>
+            <legend>Agreement</legend>
+            <label><input type="checkbox" name="accept_agreement" required> Accept Agreement</label>
+                <br>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </fieldset>
+            </form>
+    </div>
+</body>
+</html>
